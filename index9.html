@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+  'use strict'//強制宣告 轉變強行別
+    window.onload = function () {//還有onclick
+     let arr=[5,7,2,1,7,3,2,10,5,15];
+      arr.sort(function(a,b){//匿名函數(function(a,b) closure
+        return b - a
+      })
+
+
+
+    //  for(i=0;i < arr.lenght -1; i++){
+    //   for(j = i+1;j.lenght;j++){
+    //     if(arr[i]<arr[j]){
+    //       let tmp = arr[i]
+    //       arr[i]= arr[j]
+    //       arr[j]=tep
+
+    //     }
+    //   }
+    //  }
+    document.write(arr);
+    
+    }
+    //in 是元素 //of 是索引值
+</script>
+
+
+<style>
+    
+</style>
+
+<body>
+
+
+</body>
+
+</html>

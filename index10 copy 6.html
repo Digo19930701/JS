@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+function add(a,b,complete){
+  let ans = a+b
+  complete(`${a}+${b}= ${ans}`,ans)
+
+}
+
+//closure
+function newadd(a,b,complete){
+  let ans = a+b
+  complete(`${a}+${b}= ${ans}`,ans)
+
+}
+
+
+
+let arr =[5,3,2,7,6,4]
+let result = arr.filter(function(value){
+  return value>=5
+})
+console.log(result)
+
+</script>
+
+
+<style>
+    
+</style>
+
+<body>
+<button id="bn">click</button>
+
+</body>
+
+</html>

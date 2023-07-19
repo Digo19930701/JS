@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+ function test(){
+  
+  console.log('Hello')
+ }
+
+window.onload= function(){
+  bn.onclick= function(){
+    setTimeout('test()',1000)//非同步呼叫
+    console.log('等我五秒')
+  }
+
+
+
+}
+
+</script>
+
+
+<style>
+    
+</style>
+
+<body>
+<button id="bn">click</button>
+
+</body>
+
+</html>
