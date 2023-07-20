@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<style>
+
+</style>
+<script>
+   let str = `
+[
+ {
+      "name": "David",
+      "age":30,
+      "tel":[
+      {
+         "mobile":"1111",
+         "home":"2222"
+      },
+      {
+         "mobile" : "3333",
+         "home" : "4444"
+      }
+      ]
+},
+{
+"name":"亘生",
+"age" :27,
+"tel":null
+ }
+]
+`
+
+function getTelephoneNumber(tel){
+if(tel== null)
+   return '無'
+}
+
+
+
+   // let obj = JSON.parse(str)
+   // console.log(obj[1].name)
+   // console.log(obj[0].tel[0].mobile)
+
+window.onload= function(){
+   let obj = JSON.parse(str)
+   let html = ''
+
+  obj.forEach(function(person){
+   html +=`
+   <ul>
+      <li>姓名:$(person.name)</li>
+      <li>姓名:$(person.age)</li>
+      <li>姓名:$(getTelephoneNumber(person.tel))</li>
+   </ul>
+   `
+  })
+ return html
+}
+
+
+
+
+
+</script>
+
+<body>
+
+   <div id="content"></div>
+
+</body>
+
+</html>

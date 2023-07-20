@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+// let arr=['獅子','老虎','大象']
+// arr.forEach(function(animal){
+//   console.log(animal)
+// })
+
+// let arr=['子昂','林芫','亘生']
+// arr.unshift('宛仟')//第一個 
+// arr.push('子撤')//最後一個
+// document.write(arr.indexOf('ooxx'))
+
+let arr=['子昂','林芫','亘生','子昂']
+
+document.write(arr.indexOf('子昂',1+1))
+for(i=0;i<arr.length;i++){
+  for(j=1;j<arr.length;j++){
+    if(arr[i]===arr[j]){
+      console.log('有重複的')
+      break
+    }
+  }
+}
+
+
+
+
+
+
+</script>
+
+
+<body>
+<button>子昂</button>
+<button>林芫</button>
+<button>亘生</button>
+<button>子昂</button>
+
+</body>
+
+</html>
