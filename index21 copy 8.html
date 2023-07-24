@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<Script>
+    window.onload = function () {
+        setInterval (function(){
+            let d = new Date()
+            // container.innerHTML = d.getFullYear()年分
+            container.innerHTML =`${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`
+         },1000)
+      }
+    
+
+</Script>
+
+<body>
+    <button id="bn">Click</button>
+    <div id="container"></div>
+</body>
+
+</html>

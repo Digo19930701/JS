@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<Script>
+    window.onload = function () {
+        // let d = new Date()
+        // container.innerHTML = d.toLocaleString()
+        // container.innerHTML = Date.now()
+        //1970年1月1號0點0分0秒開始計算
+
+        let start_time = Date.now()
+        // bn.onclick = function(){
+        //     container.innerHTML = (Date.now() - start_time)/1000
+        // 點擊時間差距}
+        bn.onclick = function(){
+        var myDate = new Date(1690162956* 1000);
+        container.innerHTML = myDate.toLocaleString('zh-TW',{timeZone : 'Asia/Tokyo'}));
+      }
+    }
+//時間顯示
+</Script>
+
+<body>
+    <button id="bn">Click</button>
+    <div id="container"></div>
+</body>
+
+</html>
